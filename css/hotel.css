@@ -1,0 +1,9 @@
+header #logo {
+  text-align: center;
+}
+header #logo img {
+  width: 30%;
+}
+header {
+  box-shadow: 0 5px 10px silver;
+}
