@@ -29,12 +29,17 @@
 
       <nav>
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo">
-            <i class="material-icons">account_balance</i> Intercity</a
+          <a href="index.html" class="brand-logo">
+            <i class="material-icons"> account_balance</i> Intercity</a
           >
+
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
-              <a href="home.html">Home</a>
+              <a href="index.html">Home</a>
             </li>
 
             <li>
@@ -46,6 +51,23 @@
           </ul>
         </div>
       </nav>
+
+      <ul id="mobile-demo" class="sidenav">
+        <div>
+          <img src="img/painel1.jpg" alt="" />
+        </div>
+
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="acomodacao.html">Acomodação</a>
+        </li>
+        <li><a href="lazer.html">Lazer</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+      </ul>
 
       <!--Fim da aplicação da barra de navegação-->
 
@@ -166,6 +188,10 @@
     <script>
       $(document).ready(function () {
         $(".carousel").carousel();
+      });
+
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
       });
     </script>
   </body>
