@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/hotel.css" />
+
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Hotel - Intercity</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!--Aplicação da barra de navegação-->
+
+      <nav>
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">
+            <i class="material-icons"> account_balance</i> Intercity</a
+          >
+
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="acomodacao.html">Acomodação</a>
+            </li>
+            <li><a href="lazer.html">Lazer</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="localizacao.html">Localização</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul id="mobile-demo" class="sidenav">
+        <div>
+          <img src="img/painel1.jpg" alt="" />
+        </div>
+
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="acomodacao.html">Acomodação</a>
+        </li>
+        <li><a href="lazer.html">Lazer</a></li>
+        <li><a href="reservas.html">Reservas</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+      </ul>
+
+      <!--Fim da aplicação da barra de navegação-->
+
+      <div id="logo">
+        <img src="img/logo.png" />
+      </div>
+    </header>
+
+    <div id="painel">
+      <div class="carousel">
+        <a class="carousel-item" href="lazer.html"
+          ><img src="img/painel1.jpg"
+        /></a>
+        <a class="carousel-item" href="acomodacao.html"
+          ><img src="img/painel2.jpg"
+        /></a>
+        <a class="carousel-item" href="lazer.html"
+          ><img src="img/painel3.jpg"
+        /></a>
+        <a class="carousel-item" href="#four!"><img src="img/painel4.jpg" /></a>
+        <a class="carousel-item" href="#four!"><img src="img/painel5.jpg" /></a>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <h2>Faça sua reserva</h2>
+        <hr />
+
+      <!-- Inicio do formulário -->
+
+      <div class="row">
+        <form class="col s12">
+            <!-- Inicio da primeira linha -->
+          <div class="row">
+            <div class="input-field col s12 m6 l6">
+              <input id="NomeCompleto" type="text" class="validate">
+              <label for="NomeCompleto">Nome Completo</label>
+            </div>
+            <div class="input-field col s12 m6 l6">
+              <input id="Email" type="email" class="validate">
+              <label for="Email">E-Mail</label>
+            </div>
+          </div>
+          <!-- Fim da primeira linha -->
+
+
+          <!-- Inicio da segunda linha -->
+          <div class="row">
+              <!-- primeira coluna -->
+              <div class="input-field col l4 s12 m6">
+
+                <input id="CPF" type="text" class="validate">
+                <label for="CPF">CPF</label>
+
+              </div>
+              <!--Fim da primeira coluna-->
+
+               <!-- segunda coluna -->
+               <div class="input-field col l4 s12 m6">
+
+                <input id="Telefone" type="tel" class="validate">
+                <label for="Telefone">Telefone</label>
+
+              </div>
+              <!--Fim da segunda coluna-->
+
+               <!-- terceira coluna -->
+               <div class="input-field col l4 s12 m6">
+                    <select>
+                      <option value="" disabled selected>Selecione</option>
+                      <option value="Masculino">Masculino</option>
+                      <option value="Feminino">Feminino</option>
+                      <option value="Outros">Outros</option>
+                    </select>
+                    <label>Selecione o sexo</label>
+              </div>
+              <!--Fim da terceira coluna-->
+          </div>
+          <!-- Fim da segunda linha -->
+
+
+          <!-- Inicio da terceira linha -->
+          <div class="row">
+          
+            <!-- Primeira coluna -->
+            <div class="col s12 m6 l4 input-field">
+              <select>
+                <option value="Standard">Standard</option>
+                <option value="Double">Double</option>
+                <option value="Master">Master</option>
+                <option value="MasterII">Master II</option>
+                <option value="Superior">Superior</option>
+              </select>
+              <label>Selecione o quarto</label>
+            </div>
+
+            <!-- Fim da primeira coluna -->
+
+
+             <!-- Segunda coluna -->
+             <div class="col s12 m6 l4 input-field">
+              
+              <input id="check-in" type="text" class="datepicker">
+              <label for="check-in">Check-In</label>
+
+            </div>
+            <!-- Fim da segunda coluna -->
+
+             <!-- terceira coluna -->
+             <div class="col s12 m6 l4 input-field">
+              
+              <input id="check-out" type="text" class="datepicker">
+              <label for="check-out">Check-Out</label>
+
+            </div>
+            <!-- Fim da terceira coluna -->
+
+
+          </div>
+<!-- Fim da terceira Linha -->
+
+
+          <div class="row">
+            <div class="col s12 m12 l12 input-field">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Reservar
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+
+
+        </form>
+      </div>
+      <!-- Fim do formulário -->
+    </main>
+
+    <footer></footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".carousel").carousel();
+      });
+
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+
+
+      $(document).ready(function(){
+    $('select').formSelect();
+  });
+
+
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+
+    </script>
+  </body>
+</html>
